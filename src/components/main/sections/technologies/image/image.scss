@@ -1,0 +1,31 @@
+@import '../../../../../assets/colors';
+
+.container {
+	transition: 0.2s ease-in-out;
+	perspective: 3000px;
+	
+	&-img {
+		width: clamp(50px, 7vw, 150px);
+		height: clamp(50px, 7vw, 150px);
+		margin: clamp(1em, 6vw, 2em);
+		transform: rotateX(0deg) rotateZ(-20deg) translate3d(0px, 0px, 70px);
+		box-shadow: -60px 60px 15px 5px rgba(0, 0, 0, 0.4);
+		transition: all 0.4s;
+		transform-style: preserve-3d;
+
+		&:hover {
+			transform: rotateX(0deg) rotateZ(0deg) translate3d(0px, 0px, 0px);
+			box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+			transform: scale(1.2);
+		}
+	}
+
+	&-name {
+		font-size: clamp(0.5rem, 4vw, 1rem);
+		transition: 0.3s ease-in-out;
+		text-align: center;
+		text-transform: uppercase;
+		color: $--secondary;
+		margin-top: -1em;
+	}
+}

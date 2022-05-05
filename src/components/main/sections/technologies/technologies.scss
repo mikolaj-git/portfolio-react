@@ -1,0 +1,14 @@
+@import '../../../../assets/colors';
+
+.technologies {
+	transition: 0.3 ease-in-out;
+
+	&__container {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		width: 100%;
+		max-width: 1000px;
+		margin-top: 2em;
+	}
+}

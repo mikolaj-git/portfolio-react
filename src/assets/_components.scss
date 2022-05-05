@@ -1,0 +1,96 @@
+@import './colors';
+$--primary-shadow: #fff;
+$--secondary-shadow: #0ff;
+
+$--download: #37b141c9;
+$--linkedin: #0e76a8;
+$--github: #505050;
+$--phone: #37b141;
+$--email: #db5a6b;
+
+.section {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+}
+
+.subject__wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-bottom: 2em;
+
+	.subject__wrapper-title {
+		align-self: center;
+		color: $--secondary;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		font-size: clamp(2rem, 5vw, 3rem);
+		text-shadow: 0 0 20px $--primary-shadow, 0 0 40px $--secondary-shadow,
+			0 0 80px $--secondary-shadow;
+	}
+
+	.subject__wrapper-text {
+		text-align: center;
+		font-size: clamp(0.8rem, 3vw, 0.8rem);
+		text-transform: uppercase;
+		color: $--quaternary;
+		margin-top: -1.5em;
+	}
+}
+
+.download,
+.linked,
+.github,
+.phone,
+.email {
+	background: none;
+	border: none;
+	font-size: clamp(2.5rem, 4vw, 4rem);
+	cursor: pointer;
+	margin: 0 0.4em;
+	transition: 0.3s;
+
+}
+
+.download:hover,
+.linked:hover,
+.github:hover,
+.phone:hover,
+.email:hover {
+	a {
+		transition: 0.3s;
+	}
+}
+
+.download:hover {
+	a {
+		color: $--download;
+	}
+}
+.linked:hover {
+	a {
+		color: $--linkedin;
+	}
+}
+
+.github:hover {
+	a {
+		
+		color: $--github;
+	}
+}
+
+.phone:hover {
+	a {
+		color: $--phone;
+	}
+}
+
+.email:hover {
+	a {
+		color: $--email;
+	}
+}

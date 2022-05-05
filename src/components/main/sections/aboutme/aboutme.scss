@@ -1,0 +1,49 @@
+@import '../../../../assets/colors';
+@import '../../../../assets/components';
+
+.aboutme {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	max-width: 800px;
+	margin-top: 2em;
+
+	&-profile {
+		width: clamp(150px, 18vw, 500px);
+		height: clamp(150px, 18vw, 500px);
+		float: left;
+		border-radius: 100%;
+		padding: 10px;
+		shape-outside: circle(50%);
+	}
+	&-text {
+		color: $--quaternary;
+		letter-spacing: 1px;
+		font-size: clamp(0.5rem, 4vw, 1.3rem);
+	}
+	&__buttons {
+		display: flex;
+		justify-content: center;
+		margin-top: 3em;
+
+		&-download {
+			margin: 1em;
+			outline: none;
+			font-size: clamp(0.9rem, 5vw, 1rem);
+			font-weight: bold;
+			text-transform: uppercase;
+			transition: 0.3s;
+			cursor: pointer;
+
+			&:hover {
+				color: $--tertiary;
+
+				a {
+					color: $--tertiary;
+				}
+			}
+		}
+	}
+}
